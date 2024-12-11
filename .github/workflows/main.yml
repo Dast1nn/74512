@@ -99,8 +99,8 @@ jobs:
       - name: Deploy Docker Container
         run: |
           # Gracefully stop and remove the old container if exists
-          sudo docker stop my-container || true
-          sudo docker rm my-container || true
+          sudo docker stop ci_cd || true
+          sudo docker rm ci_cd || true
           
           # Run the new container
           sudo doc
